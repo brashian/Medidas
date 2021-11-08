@@ -7,11 +7,12 @@
 let resultado = 0;
 const option = document.getElementById('option');
 option.addEventListener('change',seleccionar);
-const select = document.getElementById('select');
+const select = document.getElementById('select')
 select.addEventListener('change',seleccionar);
 
-const numero= document.getElementById('numero');
-select.addEventListener('change',seleccionar);
+const number = document.getElementById('numero');
+number.addEventListener('input',seleccionar);
+
    function seleccionar(){
        let option = document.getElementById('option').value;
        let numero = document.getElementById('numero').value;
